@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <script>
+        function test(o){
+            var i = 0;
+            if(typeof o == 'object'){
+                var j = 0;
+                for(var k=0; k<10;k++){
+                    console.log('k in the for loop:',k);
+                }
+                console.log('k outside the for loop:',k);
+            }
+            console.log('j:',j);
+        }
+        var a = [2,3,4];
+        var b = 'hahhaha';
+    </script>
+</head>
+<body>
+<div>
+    <button onclick="test(a)">测试数组</button>
+    <button onclick="test(b)">测试字符串</button>
+</div>
+
+</body>
+</html>
